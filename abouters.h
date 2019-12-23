@@ -1,5 +1,4 @@
 #include <Arduino.h>
-#include <bits/stdc++.h>
 #include "ios_disp.h"
 #include "interrupt.h"
 #include "smooth.h"

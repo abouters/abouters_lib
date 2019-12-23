@@ -16,7 +16,7 @@ int smoothRising(int *n,int target,int degree_normal,int degree_slow,int thresho
         int t=*n;
         int sign = t/abs(t);
         smooth(&t,target,degree_normal);
-        if(isBetween(sign*threshold,*n,t){
+        if(isBetween(sign*threshold,*n,t)){
             *n = sign*threshold;
             return 0;
         }
