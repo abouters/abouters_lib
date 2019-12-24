@@ -4,8 +4,5 @@
 void setupTimerInt(int ms);
 void startTimerInt();
 void timerInt();
-void serialEvent1();
-void timer(void);
-void receive(void);
 
 #endif

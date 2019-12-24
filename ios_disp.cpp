@@ -1,7 +1,7 @@
 #include "ios_disp.h"
 #include <Arduino.h>
 int rxdata_ios[3]={};
-int receive_ios(void){
+int receiveIos(void){
   static int data_num = 0;
   int rx = Serial1.read();
   if(rx == 255){
@@ -16,7 +16,7 @@ int receive_ios(void){
   }
   return rxdata_ios[1];
 }
-void ios_disp(int d){
+void dispIos(int d){
     int x[7];
     x[0] = ' ';
     if(d<0){
@@ -34,10 +34,10 @@ void ios_disp(int d){
       txd(x[j]);
     }
 }
-void dnl(){
+void dnlIos(){
   txd(18);
 }
-void txd(char a){
+void txdIos(char a){
   Serial1.write(a);
   for(int i=0; i<10000; i++){
     delay(0.01);

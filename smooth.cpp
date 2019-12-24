@@ -1,6 +1,5 @@
 #include "smooth.h"
 #include "abouters.h"
-#include <bits/stdc++.h>
 int smooth(int *n,int target,int degree){
     if(*n > target){
         *n = min(*n + degree,target);
