@@ -9,6 +9,7 @@ int smooth(int *n,int target,int degree){
     }
     return *n;
 }
+
 int smoothRising(int *n,int target,int degree_normal,int degree_slow,int threshold){
     if(abs(*n) < threshold)smooth(n,threshold,degree_slow);
     else{

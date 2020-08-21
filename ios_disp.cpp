@@ -31,11 +31,11 @@ void dispIos(int d){
       d /= 10;
     }
     for(j=0; j<7; j++){
-      txd(x[j]);
+      txdIos(x[j]);
     }
 }
 void dnlIos(){
-  txd(18);
+  txdIos(18);
 }
 void txdIos(char a){
   Serial1.write(a);
