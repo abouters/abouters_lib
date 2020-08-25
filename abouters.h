@@ -7,5 +7,4 @@
 int isBetween(int a,int b,int c);
 
 
-
 #endif
