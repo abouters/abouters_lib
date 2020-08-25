@@ -6,6 +6,7 @@ double pid_x[3] = {0,0,0};
 double pid_y[3] = {0,0,0};
 double pid_r[3] = {0,0,0};
 
+
 double drive_gain[DRIVEN_MOTOR_NUM][3] = {{0.0,0.0,0.0},
 					 {0.0,0.0,0.0},
 					 {0.0,0.0,0.0},
